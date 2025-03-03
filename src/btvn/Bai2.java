@@ -1,0 +1,28 @@
+package btvn;
+
+import java.util.Scanner;
+
+/*
+Bài 2: Viết lại chữ số đảo ngược
+Mô tả: Nhập vào một số nguyên, và in ra số đảo ngược của nó.
+Test Case:
+1. Input: 1357 Output: 7531
+2. Input: 98765 Output: 56789
+*/
+
+public class Bai2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap số: ");
+        int n = sc.nextInt();
+
+        int a = 0;
+
+        while (n != 0) {
+            int b = n % 10;
+            a = a *10 + b;
+            n = n / 10;
+        }
+        System.out.println("Số đảo ngược là: " + a);
+    }
+}
