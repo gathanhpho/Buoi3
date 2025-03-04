@@ -16,13 +16,13 @@ public class Bai2 {
         System.out.print("Nhap số: ");
         int n = sc.nextInt();
 
-        int a = 0;
+        int soDaoNguoc = 0;
 
         while (n != 0) {
-            int b = n % 10;
-            a = a *10 + b;
+            int soDu = n % 10;
+            soDaoNguoc = soDaoNguoc *10 + soDu;
             n = n / 10;
         }
-        System.out.println("Số đảo ngược là: " + a);
+        System.out.println("Số đảo ngược là: " + soDaoNguoc);
     }
 }
